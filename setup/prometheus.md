@@ -134,6 +134,8 @@ sudo vim /etc/systemd/system/prometheus.service
 
 paste following in the service file - 
 ----------------------------------------------------------------------------------------------------
+**********************************
+
 [Unit]
 Description=Prometheus
 Wants=network-online.target
@@ -151,6 +153,8 @@ RestartSec=5
 
 [Install]
 WantedBy=multi-user.target
+
+***********************************************
 ----------------------------------------------------------------------------------------------------
 
 ## Step 11: Start and Enable Prometheus
