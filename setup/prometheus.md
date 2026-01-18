@@ -113,7 +113,7 @@ scrape_configs:
     static_configs:
       - targets:
           - "<NODE_PRIVATE_IP>:9100"
-
+```
 -----------------------------------------------------------------------------------
 
 Replace: <NODE_PRIVATE_IP> with the private IP of the Node EC2
@@ -135,7 +135,7 @@ sudo vim /etc/systemd/system/prometheus.service
 paste following in the service file - 
 ----------------------------------------------------------------------------------------------------
 **********************************
-
+```yaml
 [Unit]
 Description=Prometheus
 Wants=network-online.target
@@ -153,7 +153,7 @@ RestartSec=5
 
 [Install]
 WantedBy=multi-user.target
-
+```
 ***********************************************
 ----------------------------------------------------------------------------------------------------
 

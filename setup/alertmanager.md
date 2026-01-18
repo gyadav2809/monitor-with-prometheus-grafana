@@ -147,7 +147,7 @@ RestartSec=5
 
 [Install]
 WantedBy=multi-user.target
-
+```
 ## Step 8: Start and Enable Alertmanager
 sudo systemctl daemon-reload
 sudo systemctl enable alertmanager
@@ -162,13 +162,13 @@ http://<MONITORING_EC2_PUBLIC_IP>:9093
 ## Step 10: Integrate Alertmanager with Prometheus
 
 Ensure Prometheus config includes: the file we create in STEP-7 of prometheus installation - sudo vim /etc/prometheus/prometheus.yml
-
+```yaml
 alerting:
   alertmanagers:
     - static_configs:
         - targets:
             - "localhost:9093"
-
+```
 and restart prometheus - sudo systemctl restart prometheus
 
 
