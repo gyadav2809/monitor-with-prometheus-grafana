@@ -93,7 +93,7 @@ sudo vim /etc/prometheus/prometheus.yml
 paste the following in prometheus file - 
 
 ------------------------------------------------------------------------------------------------
-
+```yaml
 global:
   scrape_interval: 15s
   evaluation_interval: 15s
