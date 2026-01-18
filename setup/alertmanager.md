@@ -1,3 +1,4 @@
+````md
 # Alertmanager Setup (Alert Routing & Notifications)
 
 This document explains how Alertmanager is installed, configured, and integrated
@@ -127,6 +128,7 @@ Create the service file:
 sudo nano /etc/systemd/system/alertmanager.service
 
 Paste the following in the file.
+```yaml
 
 [Unit]
 Description=Alertmanager
