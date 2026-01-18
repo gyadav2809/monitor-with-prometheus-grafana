@@ -49,7 +49,7 @@ groups:
       description: "Node {{ $labels.instance }} has been unreachable for more than 1 minute."
       
 ```
-
+```text
 Explanation of Fields
 
 alert - Name of the alert.
@@ -57,7 +57,7 @@ expr - PromQL expression used to evaluate the alert.
 for - Alert fires only if the condition remains true for 1 minute.This avoids false positives from short network blips.
 labels.severity - Used by Alertmanager for routing and prioritization.
 annotations - Human-readable text sent in notifications.
-
+```
 
  ## Load the Alert Rule
 Ensure Prometheus loads rule files:
